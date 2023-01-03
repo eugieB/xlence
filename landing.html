@@ -11,10 +11,111 @@
     <ul>
       <li><a href="index.html"></a></li>
       <li><a href="about.html">About</a></li>
-      <li><a href="contacts.html">Contact</a></li>
+      <li><a href="contact.html">Contact</a></li>
       
     </ul>
   </nav>
+  
+  <!-- application form -->
+<form action="/submit-application" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email"><br>
+  <label for="message">Message:</label><br>
+  <textarea id="message" name="message"></textarea><br>
+  <input type="submit" value="Submit">
+</form>
+
+<!-- video section -->
+<section>
+  <h2>Videos</h2>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/1FJHYqE0RDg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="video-container">
+    <iframe src="https://www.youtube.com/embed/2Vv-BfVoq4g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</section>
+
+<!-- contact page -->
+<section>
+  <h2>Contact Us</h2>
+  <p>Phone: 555-555-5555</p>
+  <p>Email: info@example.com</p>
+</section>
+
+<!-- location -->
+<section>
+  <h2>Location</h2>
+  <div id="map"></div>
+  <script>
+    function initMap() {
+      var location = {lat: 45.523, lng: -122.675};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: location
+      });
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+  async defer></script>
+</section>
+
+<!-- gallery -->
+<section>
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="image1.jpg" alt="image 1">
+    <img src="image2.jpg" alt="image 2">
+    <img src="image3.jpg" alt="image 3">
+  </div>
+</section>
+
+<!-- payment option -->
+<form action="/process-payment" method="post">
+  <label for="card-number">Card Number:</label><br>
+  <input type="text" id="card-number" name="card-number"><br>
+  <label for="expiration-date">Expiration Date:</label><br>
+  <input type="
+
+     <!-- affiliate partners page -->
+<section>
+  <h2>Affiliate Partners</h2>
+  <ul>
+    <li><a href="#">Partner 1</a></li>
+    <li><a href="#">Partner 2</a></li>
+    <li><a href="#">Partner 3</a></li>
+  </ul>
+</section>
+
+<!-- programs and learning tools page -->
+<section>
+  <h2>Programs and Learning Tools</h2>
+  <ul>
+    <li>Program 1</li>
+    <li>Program 2</li>
+    <li>Program 3</li>
+  </ul>
+</section>
+
+<!-- testimonial blog -->
+<section>
+  <h2>Testimonials</h2>
+  <div class="testimonial">
+    <p>"I have been using this product for a month now and I am so happy with the results. It has really helped me to improve my skills and I am seeing great progress."</p>
+    <p>- John Doe</p>
+  </div>
+  <div class="testimonial">
+    <p>"I have tried several other products before, but this one has been the best by far. It is easy to use and the results are amazing. I would highly recommend it to anyone."</p>
+    <p>- Jane Doe</p>
+  </div>
+</section>
+          
   <main>
     <h2>About</h2>
     <p>Welcome to Xlence. Your one stop homework and aftercare solution.</p>
