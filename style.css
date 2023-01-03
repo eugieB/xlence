@@ -1,0 +1,65 @@
+/* blue color scheme */
+:root {
+  --blue: #0066ff;
+}
+
+/* black color scheme */
+:root {
+  --black: #000000;
+}
+
+/* yellow color scheme */
+:root {
+  --yellow: #ffff00;
+}
+
+/* white color scheme */
+:root {
+  --white: #ffffff;
+}
+
+/* green color scheme */
+:root {
+  --green: #00ff00;
+}
+
+/* red color scheme */
+:root {
+  --red: #ff0000;
+}
+
+/* use colors in your styles */
+body {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+a {
+  color: var(--blue);
+}
+
+.warning {
+  color: var(--yellow);
+}
+
+.success {
+  color: var(--green);
+}
+
+.error {
+  color: var(--red);
+}
+/* apply styles for screens with a width of 600px or less */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav ul.mobile {
+    display: block;
+  }
+}
